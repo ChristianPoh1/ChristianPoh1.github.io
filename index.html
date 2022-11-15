@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>
+
+    </title>
+    <style>
+        body {
+            background: rgb(125, 198, 205);
+            color: rgb(45, 45, 45);
+            padding: 10px;
+            font-family: arial;
+        }
+        #all-contents {
+          max-width: 800px;
+            margin: auto;
+        }
+     
+        /* navigation menu */
+        nav {
+            background: rgb(239, 80, 41);
+           margin: 0 auto;
+           margin-bottom: 20px;
+            display: flex;
+            padding: 10px;
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            color: white;
+            flex: 1;
+            margin: 0;
+        }
+        #nav-ul {
+            list-style-image: none;
+        }
+        .nav-li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+     
+        /* main container area beneath menu */
+        main {
+            background: rgb(245, 238, 219);
+            display: flex;
+        }
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+        .sidebar-img {
+            width: 200px;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        #interests {
+            border: 4px silver ridge;
+            padding: 8px;
+        }
+        h2, h3 {
+            margin: 0px;
+        }
+     </style>
+    </head>
+    
+    <body>
+    <div id="all-contents">
+        <nav>
+            <h1>Christian's great website</h1>
+            <ul>
+                <li>
+                  <a href="index.html"> Home </a>
+                </li>
+                <li>
+                  <a href="portfolio.html"> Portfolio </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+    <!-- Sidebar section -->
+    <div class="sidebar">
+        <img class="sidebar-img" src="data:image/png;base64,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">
+    </div>
+
+    <!-- Content section -->
+    <div class="content">
+    <h2>Christian Pohl</h2>
+    <p>Student at Covington High</p>
+    <!-- Interests section -->
+    <div id="interests">
+        <h3>Interests</h3>
+        <ul>
+            <li>Soccer</li>
+            <li>Video Games</li>
+            <li>Dogs</li>
+        </ul>
+    </div>
+    </div>
+</main>
+    </div>
+    </body>
+</html>
